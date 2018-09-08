@@ -1,0 +1,62 @@
+#+TITLE: AAG: Questões, Aula #1.2
+#+LANGUAGE: br
+#+options: author:nil  email:nil
+#+LATEX_HEADER: \author{Gustavo de Paula\\ \texttt{\href{mailto:gustavodepaula@disroot.org}{gustavodepaula@disroot.org}}}
+#+LATEX_HEADER: \input{structure.tex}
+#+LATEX_HEADER: \usepackage[portuguese]{babel}
+
+* Fábrica de Software
+Assumiremos aqui que fábrica de software é uma organização, empresa, ou
+semelhante que possui um time de desenvolvimento, metodologias e processos e
+onde o produto principal é o software em si ou onde o software é o
+protagonista do serviço ofertado.
+
+* Taylorismo
+Taylor, desenvolveu um conjunto de métodos que aperfeiçoavam o processo de
+divisão técnica do trabalho, sendo que o conhecimento do processo produtivo era
+de responsabilidade única do gerente. Uma das maiores características do sistema
+taylorista é a remuneração. Antes os funcionários tinham um incentivo negativo:
+a motivação era baseada no medo de serem dispensados. Com Taylor, o incentivo
+passou a ser positivo: ele propôs o pagamento por peça. Sendo assim, quanto
+maior a produtividade da organização, mais o trabalhador ganharia
+
+* Fordismo
+Fordismo é um modo de produção que faz uso do sistema de linha de produção para
+atingir três objetivos principais: intensificação (dinamismo do tempo de
+produção), economia (manutenção da produção equilibrada com seus estoques),
+produtividade (extrair o máximo da mão de obra de cada trabalhador).
+
+* Metodologias de desenvolvimento de software
+Há varias metodologias de desenvolvimento de software, os mais relevantes hoje
+são divididos nas seguintes categorias:
+** Iterativas (ágeis)
+As metodologias de desenvolvimento ágil são aquelas que fazem usos de iterações
+ou /sprints/. Cada iteração dura de uma a quatro semanas. Em uma sprint, o time
+passa por todas as fases de desenvolvimento (análises, design, programação e
+teste) e no final, o resultado é apresentado à stakeholders e clientes que podem
+dar feedback antes do sistema como todo estar pronto.
+** Cascata (waterfall)
+As metodologias de desenvolvimento em cascata são aquelas onde o desenvolvimento
+é feito linearmente separados em várias fases, com pouca flexibilidade e
+iteração. As fases de um desenvolvimento em cascata costumam ser divididas nas
+seguintes fases:
+- Documentação dos requerimentos do produto
+- Análise, onde modelos e regras de negócios são resultados
+- Design, onde a arquitetura do software é feita
+- Programação, onde o desenvolvimento é feito
+- Teste, onde há o descobrimento e conserto de bugs
+- Operação, onde há a instalação, suporte e manutenção do sistema
+
+* Análise Comparativa
+A metodologia de cascata é a que mais se aproxima das metodologias
+tayloristas/fordistas, sendo adotada muitas vezes por grandes empresas com uma
+cultura corporativa mais "aflorada". Nessa metodologia, há uma grande
+especialização dos trabalhadores de cada fase, possuindo uma grande rigidez e
+pouca autonomia para o time desenvolvimento.
+Já as metodologias ágeis são as que mais se afastam dos sistemas
+fordistas/tayloristas, onde há certa especialização entre os trabalhadores,
+porém de um modo diferente. Onde no sistema de cascata há pessoas diferentes
+para cada fase, nas metodologias ágeis, o time todo é envolvido em todas as
+fases, e dentro de cada fase, há uma certa especialização (e.g.
+Frontend/Backend). Nas metodologias ágeis há pouca rigidez e grande autonomia
+dos times de desenvolvimento.

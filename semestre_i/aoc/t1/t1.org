@@ -1,0 +1,97 @@
+#+TITLE: IAC: Trabalho #T1
+#+LANGUAGE: br
+#+options: author:nil  email:nil
+#+LATEX_HEADER: \author{Gustavo de Paula\\ \texttt{\href{mailto:gustavodepaula@disroot.org}{gustavodepaula@disroot.org}}\\ \affil{Facultade de Tecnologia de São Paulo}}
+#+LATEX_HEADER: \input{structure.tex}
+#+LATEX_HEADER: \usepackage[portuguese]{babel}
+
+* Conceitue os termos dados e informação, no que se refere a seu emprego em processamento de dados.
+Em processamento de dados, dados seria aquilo que é obtido de uma ou mais
+fontes. E informação é o resultado do processamento. Um programa que processa
+dados tem como entrada dados, e saída informações, de modo que, essas
+informações possam satisfazer um determinado uso de uma pessoa ou grupo
+* Caracterize as etapas principais de um processamento de dados.
+- Entrada: A coleta dos dados brutos.
+- Processamento: Organização e operacionalização desses dados
+- Saída: A informação produzida a partir dos dados processados.
+* Conceitue um sistema. Cite dois exemplos práticos de organizações sistêmicas na vida real.
+Segundo o livro IOC, um sistema é um “Conjunto de partes coordenadas que
+concorrem para a realização de um determinado objetivo”. Podemos citar alguns
+exemplos de sistemas na vida real:
+- Sistema jurídico, onde partes se coordenam para estabelecer contratos, julgar
+  conflitos e fazer cumprir as regras.
+- Sistema de transporte, onde partes se coordenam para possibilitar o trajeto de
+  um ponto A para um ponto B.
+* Considerando a organização de sistemas de informação definida no item 1.1.4, cite os níveis existentes e dê exemplos práticos de sistemas em cada um dos níveis relacionados.
+Para citar exemplos práticos de sistemas em cada nível, usarei o exemplo de uma
+empresa de motoboys como a Loggi.
+- Nível operacional - seria um sistema que processasse qual a melhor rota para o
+  motoboy seguir.
+- Nível gerencial - seria um sistema (ou processos manuais) que coletasse dados
+  de como um certo produto está performando para que se possa tomar decisões do
+  que precisa melhorar e o que precisa continuar.
+- Alto nível da organização - seria um sistema (ou processos manuais) que fossem
+  capazes de prover informações para que conselho executivo seja capaz de
+  decidir se um novo produto deve ser lançado ou algum cortado.
+* O que você entende por um programa de computador?
+Programa de computador são um conjunto de passos que um ou mais determinados
+computadores sejam capazes de executar.
+* Conceitue os termos hardware e software.
+Hardware são componentes físicos que em conjunto são capazes de rodar um
+conjunto de instruções. Software é esse conjunto de instruções que o Hardware é
+capaz de rodar.
+* O que é e para que serve uma linguagem de programação de computador? Cite exemplos de linguagens de programação.
+Computadores só conseguem ler instruções que estejam em linguagem de máquina
+(binário). Porém, apesar de possível, é extremamente difícil de entender,
+escrever e manter sistemas em linguagem de máquina. As linguagens de programação
+são uma camada de abstração entre a linguagem de máquina e o programador,
+fazendo que possam ser desenvolvidos programas maiores e mais complexos e com
+maior facilidade.
+* Quem desenvolveu a máquina analítica?
+Charles Babbage
+* Qual foi a característica marcante do censo de 1890 dos EUA, no que se refere à contabilização dos dados levantados?
+A característica marcante do censo de 1890 foi a velocidade na contabilização e
+processamento dos dados. Mesmo havendo um aumento populacional, o censo daquele
+ano conseguiu ser apurado 4 vezes mais rápido do que a iteração anterior.
+* Qual foi o propósito que conduziu ao desenvolvimento do primeiro computador eletrônico do mundo?
+O propósito foi a baixa velocidade de processamento e a falta de confiabilidade,
+ambos devidos á sua parte mecânica.
+* Qual foi o primeiro microprocessador de 8 bits lançado comercialmente? Qual o nome da empresa proprietária?
+O primeiro microprocessador de 8-bits lançado comercialmente foi o Intel 8008,
+da Intel.
+* Quais eram as características básicas da arquitetura proposta pelo Dr. John von Neumann?
+- A dificuldade de programar a recolocação da fiação
+- Tipo de aritmética (decimal para binário)
+* Qual a importância do computador Altair para a evolução da computação comercial?
+ Foi o primeiro computador com preço acessível a ser comercializado em grande
+ escala para os usuários domésticos e que teve boa aceitação.
+* O que você entende por sistema digital? Qual seria a alternativa na computação se não existissem máquinas digitais?
+ Sistema digital é um sistema que segue a definição da questão 3, porém usa
+ sinais digitais que usam valores discretos (descontínuos). A alternativa à
+ máquinas digitais seriam máquinas analógicas, que trabalham com valores
+ contínuos.
+* O que conduziu o pensamento dos pesquisadores para desenvolver computadores que somente usam o sistema binário e não, por exemplo, o sistema decimal?
+A dificuldade e o custo de construir uma máquina capaz de representar
+confiavelmente 10 níveis de tensão em vez de apenas dois.
+* Cite empresas brasileiras que comercializam computadores com sua própria marca.
+- Positivo
+- Itautec
+- CCE
+* Qual foi o primeiro equipamento utilizado no mundo para realizar cálculos matemáticos?
+O primeiro equipamento foi o ábaco.
+* Considerando o formato das instruções do processador IAS (ver Fig. 1.12), indique qual deverá ser a máxima quantidade de instrução que o IAS poderia ter.
+A quantidade máxima de instrução seria 256.
+* Uma das versões do processador Pentium 111 possui endereços de 36 bits em vez do tradicional de 32 bits. Qual deveria ser a capacidade máxima de endereçamento naqueles processadores?
+A capacidade máxima seria de 64G
+* O ENIAC é usualmente conhecido como sendo o primeiro computador fabricado (máquina eletrônica de processamento de dados). No entanto, antes dele pelo menos dois outros cientistas desenvolveram equipamentos eletrônicos de computação, embora sem terem tido o devido crédito. Quais foram os cientistas e suas máquinas maravilhosas?
+- John V. Atanasoff: Calculadora de resolução de equações lineares.
+- Alan Turing: Computador Colossus.
+* Qual foi a primeira linguagem de programação de alto nível desenvolvida? Qual seu objetivo principal?
+FORTRAN foi a primeira linguagem de alto nível desenvolvida e amplamente usada.
+O seu objetivo principal era a elaboração de programas científicos.
+* Pense em algumas vantagens globais obtidas pelo uso de máquinas para realizar processamento de dados em substituição ao ser humano.
+O uso de máquinas em vez do humano para realizar o processamento de dados nos
+permite uma maior precisão e capacidade de processamento para todos nós. Isso
+também permite mais pessoas se especializarem em outras áreas que não sejam o
+puro processamento de dados.
+
