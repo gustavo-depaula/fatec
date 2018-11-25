@@ -1,0 +1,26 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Sum\'ario}{1}{section*.2}
+\contentsline {section}{\numberline {0.1}Conceitue os termos dados e informa\IeC {\c c}\IeC {\~a}o, no que se refere a seu emprego em processamento de dados.}{3}{section.0.1}
+\contentsline {section}{\numberline {0.2}Caracterize as etapas principais de um processamento de dados.}{3}{section.0.2}
+\contentsline {section}{\numberline {0.3}Conceitue um sistema. Cite dois exemplos pr\IeC {\'a}ticos de organiza\IeC {\c c}\IeC {\~o}es sist\IeC {\^e}micas na vida real.}{3}{section.0.3}
+\contentsline {section}{\numberline {0.4}Considerando a organiza\IeC {\c c}\IeC {\~a}o de sistemas de informa\IeC {\c c}\IeC {\~a}o definida no item 1.1.4, cite os n\IeC {\'\i }veis existentes e d\IeC {\^e} exemplos pr\IeC {\'a}ticos de sistemas em cada um dos n\IeC {\'\i }veis relacionados.}{3}{section.0.4}
+\contentsline {section}{\numberline {0.5}O que voc\IeC {\^e} entende por um programa de computador?}{4}{section.0.5}
+\contentsline {section}{\numberline {0.6}Conceitue os termos hardware e software.}{4}{section.0.6}
+\contentsline {section}{\numberline {0.7}O que \IeC {\'e} e para que serve uma linguagem de programa\IeC {\c c}\IeC {\~a}o de computador? Cite exemplos de linguagens de programa\IeC {\c c}\IeC {\~a}o.}{4}{section.0.7}
+\contentsline {section}{\numberline {0.8}Quem desenvolveu a m\IeC {\'a}quina anal\IeC {\'\i }tica?}{4}{section.0.8}
+\contentsline {section}{\numberline {0.9}Qual foi a caracter\IeC {\'\i }stica marcante do censo de 1890 dos EUA, no que se refere \IeC {\`a} contabiliza\IeC {\c c}\IeC {\~a}o dos dados levantados?}{4}{section.0.9}
+\contentsline {section}{\numberline {0.10}Qual foi o prop\IeC {\'o}sito que conduziu ao desenvolvimento do primeiro computador eletr\IeC {\^o}nico do mundo?}{5}{section.0.10}
+\contentsline {section}{\numberline {0.11}Qual foi o primeiro microprocessador de 8 bits lan\IeC {\c c}ado comercialmente? Qual o nome da empresa propriet\IeC {\'a}ria?}{5}{section.0.11}
+\contentsline {section}{\numberline {0.12}Quais eram as caracter\IeC {\'\i }sticas b\IeC {\'a}sicas da arquitetura proposta pelo Dr. John von Neumann?}{5}{section.0.12}
+\contentsline {section}{\numberline {0.13}Qual a import\IeC {\^a}ncia do computador Altair para a evolu\IeC {\c c}\IeC {\~a}o da computa\IeC {\c c}\IeC {\~a}o comercial?}{5}{section.0.13}
+\contentsline {section}{\numberline {0.14}O que voc\IeC {\^e} entende por sistema digital? Qual seria a alternativa na computa\IeC {\c c}\IeC {\~a}o se n\IeC {\~a}o existissem m\IeC {\'a}quinas digitais?}{5}{section.0.14}
+\contentsline {section}{\numberline {0.15}O que conduziu o pensamento dos pesquisadores para desenvolver computadores que somente usam o sistema bin\IeC {\'a}rio e n\IeC {\~a}o, por exemplo, o sistema decimal?}{6}{section.0.15}
+\contentsline {section}{\numberline {0.16}Cite empresas brasileiras que comercializam computadores com sua pr\IeC {\'o}pria marca.}{6}{section.0.16}
+\contentsline {section}{\numberline {0.17}Qual foi o primeiro equipamento utilizado no mundo para realizar c\IeC {\'a}lculos matem\IeC {\'a}ticos?}{6}{section.0.17}
+\contentsline {section}{\numberline {0.18}Considerando o formato das instru\IeC {\c c}\IeC {\~o}es do processador IAS (ver Fig. 1.12), indique qual dever\IeC {\'a} ser a m\IeC {\'a}xima quantidade de instru\IeC {\c c}\IeC {\~a}o que o IAS poderia ter.}{6}{section.0.18}
+\contentsline {section}{\numberline {0.19}Uma das vers\IeC {\~o}es do processador Pentium 111 possui endere\IeC {\c c}os de 36 bits em vez do tradicional de 32 bits. Qual deveria ser a capacidade m\IeC {\'a}xima de endere\IeC {\c c}amento naqueles processadores?}{6}{section.0.19}
+\contentsline {section}{\numberline {0.20}O ENIAC \IeC {\'e} usualmente conhecido como sendo o primeiro computador fabricado (m\IeC {\'a}quina eletr\IeC {\^o}nica de processamento de dados). No entanto, antes dele pelo menos dois outros cientistas desenvolveram equipamentos eletr\IeC {\^o}nicos de computa\IeC {\c c}\IeC {\~a}o, embora sem terem tido o devido cr\IeC {\'e}dito. Quais foram os cientistas e suas m\IeC {\'a}quinas maravilhosas?}{7}{section.0.20}
+\contentsline {section}{\numberline {0.21}Qual foi a primeira linguagem de programa\IeC {\c c}\IeC {\~a}o de alto n\IeC {\'\i }vel desenvolvida? Qual seu objetivo principal?}{7}{section.0.21}
+\contentsline {section}{\numberline {0.22}Pense em algumas vantagens globais obtidas pelo uso de m\IeC {\'a}quinas para realizar processamento de dados em substitui\IeC {\c c}\IeC {\~a}o ao ser humano.}{7}{section.0.22}

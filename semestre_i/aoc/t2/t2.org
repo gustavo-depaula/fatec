@@ -1,0 +1,98 @@
+#+LANGUAGE: br
+#+options: author:nil  email:nil
+#+LATEX_HEADER: \input{structure.tex}
+#+LATEX_HEADER: \usepackage[portuguese]{babel}
+
+* Explique o que você entende por memória. Cite dois exemplos de memórias na vida prática (evite usar exemplo de memória de computador).
+Memória é um determinado elemento que é capaz de armazenar itens ísicos ou
+abstratos. Exemplos de memórias na vida são:
+- Nosso cérebro.
+- Um galpão
+* Descreva as funções de uma Unidade Central de Processamento.
+O papel da unidade central de processamento é realizar todo o ciclo de uma
+instrução de máquina. Isso significa poder interpretar e comandar a sequência de
+passos para a execução de uma determinada operação e realizar operações
+aritméticas e lógicas com dados.
+* Faça o mesmo para a memória de um computador.
+- A memória principal tem o objetivo de armazenamento de dados para utilização
+  imediata durante a execução de um programa.
+- A memória secundária tem o objetivo de armazenar dados de forma permanente e
+  para utilizção posterior.
+* Para que servem os dispositivos de entrada e de saída de um computador? Cite alguns exemplos.
+Para permitir a comunicação entre sistemas computacionais e o mundo externo.
+Alguns exemplos são:
+- Mouse
+- Teclado
+- Monitor
+* Imagine uma empresa qualquer. Cite exemplos de arquivos e registros a serem criados para o armazenamento das informações que circulam na tal empresa.
+Arquivos:
+-
+* Conceitue o bit, o byte e a palavra.
+- Bit: dígito binário (0 ou 1)
+- Byte: conjunto de 8 bits
+- Palavra: conceito usado para especificar um conjunto de bits usado para o
+  armazenamento e transferência de informções entre MP e UCP.
+* Indique o valor de x nas seguintes expressões:
+** 65.536 = 64K
+** 12.288K = 12M
+** 19.922.944 = 19M
+** 8 Gbytes = 8.589.934.592 bytes
+** 64 Kbytes = 524.288 bits
+** 262.144 bits = 256 K bits
+** 16.777.216 palavras = 16M palavras
+** 128 Gbits = 137.438.953.472 bits
+** 512K células = 524.288 células
+** 256 Kbytes = 2M bits
+* O que é vazão em um sistema de computação? E tempo de resposta? Em que circunstâncias são utilizadas estas informações?
+Vazão é a quantidade de transações que podem ser executadas por um sistema em
+determinado tempo. E.g. quantidade de corridas de motoboy que podem ser alocadas
+em um período de 30s.
+Tempo de resposta é uma medida que especifica o desempenho do sistema como um
+todo e não apenas de alguma partes. E.g. o tempo que leva para uma corrida ser
+criada e aparecer na tela de acompanhamento.
+* Qual é a diferença entre linguagem de alto nível e linguagem de máquina?
+Linguagem de alto nível é uma linguagem de programação mais próxima da linguagem
+humana. Já a linguagem de máquina é a linguagem que computadores entendem, se
+distanciando muito das regras da linguagem de alto nível.
+* Se um barramento de endereços possui 17 fios condutores, qual deverá ser o maior endereço que pode ser transportado nesse barramento?
+2^17
+* Cite exemplos de processadores (UCP) comerciais.
+- AMD Ryzen Threadripper
+- Intel Core i5
+- Qualcomm Snapdragon 830
+* Os barramentos são fios condutores que interligam os componentes de um sistema de computação (Se) e permitem a comunicação entre eles. Eles são organizados em três grupos de fios, cada um deles com funções separadas. Quais são esses grupos? Indique, para cada grupo: sua função, direção do fluxo de sinais e suas principais características.
+- BD: serve para transportar bits de dados, é bidirecional; suas principais
+  características são sua largura, velocidade e vazão.
+- BE: serve para transportar bits de endereço; é unidirecional, do processador
+  para a memória; sua principal característica é a largura.
+- BC: serve para transportar sinais de comunicação e controle; cada fio possui
+  uma dirção única; sua principal característica é a individualidade de seus
+  fios.
+* Um determinado Sistema de Computação é constituído de um processador com quatro unidades de cálculo para inteiros, operando a 1,2 GHz de velocidade e de uma Memória Principal (MP) constituída de um espaço máximo de endereçamento de 128M endereços. Ambos os componentes são interligados por um barramento de dados (BD), de endereços (BE) e de controle (BC), sabendo-se que o BC possui 112 fios condutores para seus diversos sinais e que o BD tem uma taxa de transferência de dados de 6,4 Gbits/s. Considerando que o soquete do processador é do tipo 1 para 171 pinos, pergunta-se:
+** Qual deverá ser a velocidade do BD?
+Velocidade = Taxa de transferência / Largura ou V = T / L
+Largura do BD = Total de pinos - (Pinos do BC + Pinos do BE)
+2^(Largura BE) = 128M = 2^7 * 2^10 * 2^10 = 2^27
+Portanto, Largura do BE = 27
+Portanto Largura do BD = 171 - (112 + 27) = 32
+Portanto Velocidade = 6,4Gbps / 32 = 200Mbps = 200Mhz
+** O que acontecerá com o sistema se o BE tiver seu projeto alterado, acrescentando-se dois novos fios condutores?
+A capacidade de memória será quadruplicada. (x2^2 = 4).
+* Qual é o princípio fundamental que caracteriza a existência e eficácia dos barramentos em um SC - Sistema de Computação?
+
+* Considere um SC que possua um processador capaz de endereçar, no máximo, 32M posições de memória principal. Qual deverá ser o tamanho, em bits, de seu barramento de endereços (BE)?
+Deverá ser de 25 bits
+* Um determinado processador tem seus transistores com espessura de 90 nanômetros. Se se desejasse expressar esta medida em angstroms, como seria indicada a espessura dos transistores? E se a unidade fosse o micron?
+90nm = 9 angstrom = 0.09 mi
+* Calcule o valor de x nas seguintes expressões:
+** 16K = 2^14
+** 2^27= 128M
+** 4M * 128K = 2^9 G
+** 32 Mbytes = 2^8 Mbits
+* Por que se menciona que a equivalência 200 MHz = 200 Mbps é aproximada e não exata? E por que a equivalência 8000 Mbps = 8 Gbps também não é exata e sim aproximada?
+No primeiro caso porque 1Mhz = 1000Hz, enquanto 1Mbps = 1024bps. Já no segundo é
+porque 1G não é 1000M e sim 1024M.
+* Cite uma das razões principais pela qual os atuais sistemas de computação possuem uma hierarquia de barramentos interligando os diversos componentes, em vez de utilizar um único conjunto de barramentos, interligando todos os componentes do sistema.
+Porque há periéricos com velocidades diferentes. Se houvesse apenas um
+barramento, um periérico que possuisse uma velocidade maior teria sua velocidade
+desacelerada por um periérico de menor velocidade.

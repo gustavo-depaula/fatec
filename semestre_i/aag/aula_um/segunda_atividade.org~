@@ -1,0 +1,38 @@
+#+TITLE: AAG: Questões, Aula #1.2
+#+LANGUAGE: br
+#+options: author:nil  email:nil
+#+LATEX_HEADER: \author{Gustavo de Paula\\ \texttt{\href{mailto:gustavodepaula@disroot.org}{gustavodepaula@disroot.org}}}
+#+LATEX_HEADER: \input{structure.tex}
+#+LATEX_HEADER: \usepackage[portuguese]{babel}
+
+* Fábrica de Software
+Assumiremos aqui que fábrica de software é uma organização, empresa, ou
+semelhante que possui um time de desenvolvimento, metodologias e processos e
+onde o produto principal é o software em si ou onde o software é o
+protagonista do serviço ofertado.
+
+* Taylorismo
+
+* Fordismo
+
+* Metodologias de desenvolvimento de software
+Há varias metodologias de desenvolvimento de software, os mais relevantes hoje
+são divididos nas seguintes categorias:
+** Iterativas (ágeis)
+As metodologias de desenvolvimento ágil são aquelas que fazem usos de iterações
+ou /sprints/. Cada iteração dura de uma a quatro semanas. Em uma sprint, o time
+passa por todas as fases de desenvolvimento (análises, design, programação e
+teste) e no final, o resultado é apresentado à stakeholders e clientes que podem
+dar feedback antes do sistema como todo estar pronto.
+*** 
+** Cascata (waterfall)
+As metodologias de desenvolvimento em cascata são aquelas onde o desenvolvimento
+é feito linearmente separados em várias fases, com pouca flexibilidade e
+iteração. As fases de um desenvolvimento em cascata costumam ser divididas nas
+seguintes fases:
+- Documentação dos requerimentos do produto
+- Análise, onde modelos e regras de negócios são resultados
+- Design, onde a arquitetura do software é feita
+- Programação, onde o desenvolvimento é feito
+- Teste, onde há o descobrimento e conserto de bugs
+- Operação, onde há a instalação, suporte e manutenção do sistema

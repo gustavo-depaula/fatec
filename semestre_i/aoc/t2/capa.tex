@@ -1,0 +1,304 @@
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	twoside,			% para impressão em recto e verso. Oposto a oneside
+	a4paper,			% tamanho do papel.
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil,				% o último idioma é o principal do documento
+	]{abntex2}
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+% ---
+
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+% ---
+% CONFIGURAÇÕES DE PACOTES
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{Trabalho T2\\ Disciplina AOC}
+\autor{Gustavo de Paula}
+\local{Brasil}
+\data{\today}
+\instituicao{%
+  Faculdade de Tecnologia de São Paulo -- FATEC-SP
+  \par
+  Análise e Desenvolvimento de Sistemas
+  \par
+  Disciplica AOC}
+\tipotrabalho{Tese (Doutorado)}
+% O preambulo deve conter o tipo do trabalho, o objetivo,
+% o nome da instituição e a área de concentração
+% \preambulo{Modelo canônico de Projeto de pesquisa em conformidade
+% com as normas ABNT apresentado à comunidade de usuários \LaTeX.}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title},
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{projeto de pesquisa},
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% ---
+
+% ---
+% Espaçamentos entre linhas e parágrafos
+% ---
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+
+\begin{document}
+
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% ---
+\imprimirfolhaderosto
+% ---
+
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+\section{Explique o que você entende por memória. Cite dois exemplos de memórias na vida prática (evite usar exemplo de memória de computador).}
+\label{sec:org3c73860}
+Memória é um determinado elemento que é capaz de armazenar itens ísicos ou
+abstratos. Exemplos de memórias na vida são:
+\begin{itemize}
+\item Nosso cérebro.
+\item Um galpão
+\end{itemize}
+\section{Descreva as funções de uma Unidade Central de Processamento.}
+\label{sec:org4b3b1fc}
+O papel da unidade central de processamento é realizar todo o ciclo de uma
+instrução de máquina. Isso significa poder interpretar e comandar a sequência de
+passos para a execução de uma determinada operação e realizar operações
+aritméticas e lógicas com dados.
+\section{Faça o mesmo para a memória de um computador.}
+\label{sec:orgb0fdd6d}
+\begin{itemize}
+\item A memória principal tem o objetivo de armazenamento de dados para utilização
+imediata durante a execução de um programa.
+\item A memória secundária tem o objetivo de armazenar dados de forma permanente e
+para utilizção posterior.
+\end{itemize}
+\section{Para que servem os dispositivos de entrada e de saída de um computador? Cite alguns exemplos.}
+\label{sec:orga2f354a}
+Para permitir a comunicação entre sistemas computacionais e o mundo externo.
+Alguns exemplos são:
+\begin{itemize}
+\item Mouse
+\item Teclado
+\item Monitor
+\end{itemize}
+\section{Imagine uma empresa qualquer. Cite exemplos de arquivos e registros a serem criados para o armazenamento das informações que circulam na tal empresa.}
+\label{sec:org2eb6e37}
+Arquivos:
+\begin{itemize}
+\item 
+\end{itemize}
+\section{Conceitue o bit, o byte e a palavra.}
+\label{sec:org118ecd2}
+\begin{itemize}
+\item Bit: dígito binário (0 ou 1)
+\item Byte: conjunto de 8 bits
+\item Palavra: conceito usado para especificar um conjunto de bits usado para o
+armazenamento e transferência de informções entre MP e UCP.
+\end{itemize}
+\section{Indique o valor de x nas seguintes expressões:}
+\label{sec:orgbc10c82}
+\subsection{65.536 = 64K}
+\label{sec:org96425d2}
+\subsection{12.288K = 12M}
+\label{sec:org3b6bbb2}
+\subsection{19.922.944 = 19M}
+\label{sec:orgea4eb01}
+\subsection{8 Gbytes = 8.589.934.592 bytes}
+\label{sec:orga58afc4}
+\subsection{64 Kbytes = 524.288 bits}
+\label{sec:orgabdbecc}
+\subsection{262.144 bits = 256 K bits}
+\label{sec:orgf73cc6f}
+\subsection{16.777.216 palavras = 16M palavras}
+\label{sec:org9624bff}
+\subsection{128 Gbits = 137.438.953.472 bits}
+\label{sec:org5a6ce74}
+\subsection{512K células = 524.288 células}
+\label{sec:org9a443a0}
+\subsection{256 Kbytes = 2M bits}
+\label{sec:orgbfeb965}
+\section{O que é vazão em um sistema de computação? E tempo de resposta? Em que circunstâncias são utilizadas estas informações?}
+\label{sec:org06a4274}
+Vazão é a quantidade de transações que podem ser executadas por um sistema em
+determinado tempo. E.g. quantidade de corridas de motoboy que podem ser alocadas
+em um período de 30s.
+Tempo de resposta é uma medida que especifica o desempenho do sistema como um
+todo e não apenas de alguma partes. E.g. o tempo que leva para uma corrida ser
+criada e aparecer na tela de acompanhamento.
+\section{Qual é a diferença entre linguagem de alto nível e linguagem de máquina?}
+\label{sec:org06bce34}
+Linguagem de alto nível é uma linguagem de programação mais próxima da linguagem
+humana. Já a linguagem de máquina é a linguagem que computadores entendem, se
+distanciando muito das regras da linguagem de alto nível.
+\section{Se um barramento de endereços possui 17 fios condutores, qual deverá ser o maior endereço que pode ser transportado nesse barramento?}
+\label{sec:orgae45469}
+2\(^{\text{17}}\)
+\section{Cite exemplos de processadores (UCP) comerciais.}
+\label{sec:org2c4c16c}
+\begin{itemize}
+\item AMD Ryzen Threadripper
+\item Intel Core i5
+\item Qualcomm Snapdragon 830
+\end{itemize}
+\section{Os barramentos são fios condutores que interligam os componentes de um sistema de computação (Se) e permitem a comunicação entre eles. Eles são organizados em três grupos de fios, cada um deles com funções separadas. Quais são esses grupos? Indique, para cada grupo: sua função, direção do fluxo de sinais e suas principais características.}
+\label{sec:orge007439}
+\begin{itemize}
+\item BD: serve para transportar bits de dados, é bidirecional; suas principais
+características são sua largura, velocidade e vazão.
+\item BE: serve para transportar bits de endereço; é unidirecional, do processador
+para a memória; sua principal característica é a largura.
+\item BC: serve para transportar sinais de comunicação e controle; cada fio possui
+uma dirção única; sua principal característica é a individualidade de seus
+fios.
+\end{itemize}
+\section{Um determinado Sistema de Computação é constituído de um processador com quatro unidades de cálculo para inteiros, operando a 1,2 GHz de velocidade e de uma Memória Principal (MP) constituída de um espaço máximo de endereçamento de 128M endereços. Ambos os componentes são interligados por um barramento de dados (BD), de endereços (BE) e de controle (BC), sabendo-se que o BC possui 112 fios condutores para seus diversos sinais e que o BD tem uma taxa de transferência de dados de 6,4 Gbits/s. Considerando que o soquete do processador é do tipo 1 para 171 pinos, pergunta-se:}
+\label{sec:orga64e3f4}
+\subsection{Qual deverá ser a velocidade do BD?}
+\label{sec:org3e5a83d}
+Velocidade = Taxa de transferência / Largura ou V = T / L
+Largura do BD = Total de pinos - (Pinos do BC + Pinos do BE)
+2\(^{\text{(Largura BE)}}\) = 128M = 2\(^{\text{7}}\) * 2\(^{\text{10}}\) * 2\(^{\text{10}}\) = 2\(^{\text{27}}\)
+Portanto, Largura do BE = 27
+Portanto Largura do BD = 171 - (112 + 27) = 32
+Portanto Velocidade = 6,4Gbps / 32 = 200Mbps = 200Mhz
+\subsection{O que acontecerá com o sistema se o BE tiver seu projeto alterado, acrescentando-se dois novos fios condutores?}
+\label{sec:org23b6461}
+A capacidade de memória será quadruplicada. (x2\(^{\text{2}}\) = 4).
+\section{Qual é o princípio fundamental que caracteriza a existência e eficácia dos barramentos em um SC - Sistema de Computação?}
+\label{sec:org4c00886}
+
+\section{Considere um SC que possua um processador capaz de endereçar, no máximo, 32M posições de memória principal. Qual deverá ser o tamanho, em bits, de seu barramento de endereços (BE)?}
+\label{sec:org50fe15f}
+Deverá ser de 25 bits
+\section{Um determinado processador tem seus transistores com espessura de 90 nanômetros. Se se desejasse expressar esta medida em angstroms, como seria indicada a espessura dos transistores? E se a unidade fosse o micron?}
+\label{sec:org7ba105d}
+90nm = 9 angstrom = 0.09 mi
+\section{Calcule o valor de x nas seguintes expressões:}
+\label{sec:orgb4122f5}
+\subsection{16K = 2\(^{\text{14}}\)}
+\label{sec:org42bab4d}
+\subsection{2\(^{\text{27}}\)= 128M}
+\label{sec:org1fdbf42}
+\subsection{4M * 128K = 2\(^{\text{9}}\) G}
+\label{sec:org067240b}
+\subsection{32 Mbytes = 2\(^{\text{8}}\) Mbits}
+\label{sec:org5c041de}
+\section{Por que se menciona que a equivalência 200 MHz = 200 Mbps é aproximada e não exata? E por que a equivalência 8000 Mbps = 8 Gbps também não é exata e sim aproximada?}
+\label{sec:org2d179f9}
+No primeiro caso porque 1Mhz = 1000Hz, enquanto 1Mbps = 1024bps. Já no segundo é
+porque 1G não é 1000M e sim 1024M.
+\section{Cite uma das razões principais pela qual os atuais sistemas de computação possuem uma hierarquia de barramentos interligando os diversos componentes, em vez de utilizar um único conjunto de barramentos, interligando todos os componentes do sistema.}
+\label{sec:orge1ca712}
+Porque há periéricos com velocidades diferentes. Se houvesse apenas um
+barramento, um periérico que possuisse uma velocidade maior teria sua velocidade
+desacelerada por um periérico de menor velocidade.
+\end{document}
